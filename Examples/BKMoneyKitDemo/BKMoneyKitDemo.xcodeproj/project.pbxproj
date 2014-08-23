@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFB3629A19A8F65F001E640D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629919A8F65F001E640D /* Foundation.framework */; };
+		DFB3629C19A8F65F001E640D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629B19A8F65F001E640D /* CoreGraphics.framework */; };
+		DFB3629E19A8F65F001E640D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629D19A8F65F001E640D /* UIKit.framework */; };
+		DFB362A419A8F65F001E640D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB362A219A8F65F001E640D /* InfoPlist.strings */; };
+		DFB362A619A8F65F001E640D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362A519A8F65F001E640D /* main.m */; };
+		DFB362AA19A8F65F001E640D /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362A919A8F65F001E640D /* BKAppDelegate.m */; };
+		DFB362AC19A8F65F001E640D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB362AB19A8F65F001E640D /* Images.xcassets */; };
+		DFB362B319A8F65F001E640D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB362B219A8F65F001E640D /* XCTest.framework */; };
+		DFB362B419A8F65F001E640D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629919A8F65F001E640D /* Foundation.framework */; };
+		DFB362B519A8F65F001E640D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629D19A8F65F001E640D /* UIKit.framework */; };
+		DFB362BD19A8F65F001E640D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB362BB19A8F65F001E640D /* InfoPlist.strings */; };
+		DFB362BF19A8F65F001E640D /* BKMoneyKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362BE19A8F65F001E640D /* BKMoneyKitDemoTests.m */; };
+		DFB362CC19A8F6BF001E640D /* BKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362CA19A8F6BF001E640D /* BKViewController.m */; };
+		DFB362CD19A8F6BF001E640D /* BKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB362CB19A8F6BF001E640D /* BKViewController.xib */; };
+		DFB362D619A8F6FB001E640D /* BKCardNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362CF19A8F6FB001E640D /* BKCardNumberField.m */; };
+		DFB362D719A8F6FB001E640D /* BKCardNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */; };
+		DFB362D819A8F6FB001E640D /* BKCardPatternInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */; };
+		DFB362D919A8F6FB001E640D /* CardLogo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB362D419A8F6FB001E640D /* CardLogo.bundle */; };
+		DFB362DA19A8F6FB001E640D /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFB362D519A8F6FB001E640D /* CardPatterns.plist */; };
+		DFB362DF19A8F823001E640D /* BKCardExpiryField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362DE19A8F823001E640D /* BKCardExpiryField.m */; };
+		DFB362E819A8F8EA001E640D /* BKCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362E419A8F8EA001E640D /* BKCurrencyTextField.m */; };
+		DFB362ED19A8FCDF001E640D /* BKMoneyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362EC19A8FCDF001E640D /* BKMoneyUtils.m */; };
+		DFB362F019A8FE76001E640D /* BKForwardingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362EF19A8FE76001E640D /* BKForwardingTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFB362B619A8F65F001E640D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB3628E19A8F65F001E640D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB3629519A8F65F001E640D;
+			remoteInfo = BKMoneyKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFB3629619A8F65F001E640D /* BKMoneyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKMoneyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB3629919A8F65F001E640D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFB3629B19A8F65F001E640D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFB3629D19A8F65F001E640D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFB362A119A8F65F001E640D /* BKMoneyKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BKMoneyKitDemo-Info.plist"; sourceTree = "<group>"; };
+		DFB362A319A8F65F001E640D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFB362A519A8F65F001E640D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFB362A719A8F65F001E640D /* BKMoneyKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BKMoneyKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DFB362A819A8F65F001E640D /* BKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
+		DFB362A919A8F65F001E640D /* BKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
+		DFB362AB19A8F65F001E640D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFB362B119A8F65F001E640D /* BKMoneyKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKMoneyKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB362B219A8F65F001E640D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DFB362BA19A8F65F001E640D /* BKMoneyKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BKMoneyKitDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DFB362BC19A8F65F001E640D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFB362BE19A8F65F001E640D /* BKMoneyKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKMoneyKitDemoTests.m; sourceTree = "<group>"; };
+		DFB362C919A8F6BF001E640D /* BKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKViewController.h; sourceTree = "<group>"; };
+		DFB362CA19A8F6BF001E640D /* BKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKViewController.m; sourceTree = "<group>"; };
+		DFB362CB19A8F6BF001E640D /* BKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKViewController.xib; sourceTree = "<group>"; };
+		DFB362CE19A8F6FB001E640D /* BKCardNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberField.h; sourceTree = "<group>"; };
+		DFB362CF19A8F6FB001E640D /* BKCardNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberField.m; sourceTree = "<group>"; };
+		DFB362D019A8F6FB001E640D /* BKCardNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberFormatter.h; sourceTree = "<group>"; };
+		DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberFormatter.m; sourceTree = "<group>"; };
+		DFB362D219A8F6FB001E640D /* BKCardPatternInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardPatternInfo.h; sourceTree = "<group>"; };
+		DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardPatternInfo.m; sourceTree = "<group>"; };
+		DFB362D419A8F6FB001E640D /* CardLogo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CardLogo.bundle; sourceTree = "<group>"; };
+		DFB362D519A8F6FB001E640D /* CardPatterns.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CardPatterns.plist; sourceTree = "<group>"; };
+		DFB362DD19A8F823001E640D /* BKCardExpiryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardExpiryField.h; sourceTree = "<group>"; };
+		DFB362DE19A8F823001E640D /* BKCardExpiryField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryField.m; sourceTree = "<group>"; };
+		DFB362E319A8F8EA001E640D /* BKCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCurrencyTextField.h; sourceTree = "<group>"; };
+		DFB362E419A8F8EA001E640D /* BKCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCurrencyTextField.m; sourceTree = "<group>"; };
+		DFB362EB19A8FCDF001E640D /* BKMoneyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMoneyUtils.h; sourceTree = "<group>"; };
+		DFB362EC19A8FCDF001E640D /* BKMoneyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMoneyUtils.m; sourceTree = "<group>"; };
+		DFB362EE19A8FE76001E640D /* BKForwardingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKForwardingTextField.h; sourceTree = "<group>"; };
+		DFB362EF19A8FE76001E640D /* BKForwardingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKForwardingTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB3629319A8F65F001E640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB3629C19A8F65F001E640D /* CoreGraphics.framework in Frameworks */,
+				DFB3629E19A8F65F001E640D /* UIKit.framework in Frameworks */,
+				DFB3629A19A8F65F001E640D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB362AE19A8F65F001E640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB362B319A8F65F001E640D /* XCTest.framework in Frameworks */,
+				DFB362B519A8F65F001E640D /* UIKit.framework in Frameworks */,
+				DFB362B419A8F65F001E640D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB3628D19A8F65F001E640D = {
+			isa = PBXGroup;
+			children = (
+				DFB362C819A8F66D001E640D /* BKMoneyKit */,
+				DFB3629F19A8F65F001E640D /* BKMoneyKitDemo */,
+				DFB362B819A8F65F001E640D /* BKMoneyKitDemoTests */,
+				DFB3629819A8F65F001E640D /* Frameworks */,
+				DFB3629719A8F65F001E640D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB3629719A8F65F001E640D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB3629619A8F65F001E640D /* BKMoneyKitDemo.app */,
+				DFB362B119A8F65F001E640D /* BKMoneyKitDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB3629819A8F65F001E640D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB3629919A8F65F001E640D /* Foundation.framework */,
+				DFB3629B19A8F65F001E640D /* CoreGraphics.framework */,
+				DFB3629D19A8F65F001E640D /* UIKit.framework */,
+				DFB362B219A8F65F001E640D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB3629F19A8F65F001E640D /* BKMoneyKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362A819A8F65F001E640D /* BKAppDelegate.h */,
+				DFB362A919A8F65F001E640D /* BKAppDelegate.m */,
+				DFB362C919A8F6BF001E640D /* BKViewController.h */,
+				DFB362CA19A8F6BF001E640D /* BKViewController.m */,
+				DFB362CB19A8F6BF001E640D /* BKViewController.xib */,
+				DFB362AB19A8F65F001E640D /* Images.xcassets */,
+				DFB362A019A8F65F001E640D /* Supporting Files */,
+			);
+			path = BKMoneyKitDemo;
+			sourceTree = "<group>";
+		};
+		DFB362A019A8F65F001E640D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362A119A8F65F001E640D /* BKMoneyKitDemo-Info.plist */,
+				DFB362A219A8F65F001E640D /* InfoPlist.strings */,
+				DFB362A519A8F65F001E640D /* main.m */,
+				DFB362A719A8F65F001E640D /* BKMoneyKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB362B819A8F65F001E640D /* BKMoneyKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362BE19A8F65F001E640D /* BKMoneyKitDemoTests.m */,
+				DFB362B919A8F65F001E640D /* Supporting Files */,
+			);
+			path = BKMoneyKitDemoTests;
+			sourceTree = "<group>";
+		};
+		DFB362B919A8F65F001E640D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362BA19A8F65F001E640D /* BKMoneyKitDemoTests-Info.plist */,
+				DFB362BB19A8F65F001E640D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB362C819A8F66D001E640D /* BKMoneyKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362EA19A8FCD2001E640D /* Common */,
+				DFB362DB19A8F7ED001E640D /* CardNumberField */,
+				DFB362DC19A8F80B001E640D /* CardExpiryField */,
+				DFB362E019A8F8AE001E640D /* CurrencyTextField */,
+			);
+			name = BKMoneyKit;
+			path = ../../BKMoneyKit;
+			sourceTree = "<group>";
+		};
+		DFB362DB19A8F7ED001E640D /* CardNumberField */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362CE19A8F6FB001E640D /* BKCardNumberField.h */,
+				DFB362CF19A8F6FB001E640D /* BKCardNumberField.m */,
+				DFB362D019A8F6FB001E640D /* BKCardNumberFormatter.h */,
+				DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */,
+				DFB362D219A8F6FB001E640D /* BKCardPatternInfo.h */,
+				DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */,
+				DFB362D419A8F6FB001E640D /* CardLogo.bundle */,
+				DFB362D519A8F6FB001E640D /* CardPatterns.plist */,
+			);
+			name = CardNumberField;
+			sourceTree = "<group>";
+		};
+		DFB362DC19A8F80B001E640D /* CardExpiryField */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362DD19A8F823001E640D /* BKCardExpiryField.h */,
+				DFB362DE19A8F823001E640D /* BKCardExpiryField.m */,
+			);
+			name = CardExpiryField;
+			sourceTree = "<group>";
+		};
+		DFB362E019A8F8AE001E640D /* CurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362E319A8F8EA001E640D /* BKCurrencyTextField.h */,
+				DFB362E419A8F8EA001E640D /* BKCurrencyTextField.m */,
+			);
+			name = CurrencyTextField;
+			sourceTree = "<group>";
+		};
+		DFB362EA19A8FCD2001E640D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DFB362EB19A8FCDF001E640D /* BKMoneyUtils.h */,
+				DFB362EC19A8FCDF001E640D /* BKMoneyUtils.m */,
+				DFB362EE19A8FE76001E640D /* BKForwardingTextField.h */,
+				DFB362EF19A8FE76001E640D /* BKForwardingTextField.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB3629519A8F65F001E640D /* BKMoneyKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB362C219A8F65F001E640D /* Build configuration list for PBXNativeTarget "BKMoneyKitDemo" */;
+			buildPhases = (
+				DFB3629219A8F65F001E640D /* Sources */,
+				DFB3629319A8F65F001E640D /* Frameworks */,
+				DFB3629419A8F65F001E640D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BKMoneyKitDemo;
+			productName = BKMoneyKitDemo;
+			productReference = DFB3629619A8F65F001E640D /* BKMoneyKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFB362B019A8F65F001E640D /* BKMoneyKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB362C519A8F65F001E640D /* Build configuration list for PBXNativeTarget "BKMoneyKitDemoTests" */;
+			buildPhases = (
+				DFB362AD19A8F65F001E640D /* Sources */,
+				DFB362AE19A8F65F001E640D /* Frameworks */,
+				DFB362AF19A8F65F001E640D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB362B719A8F65F001E640D /* PBXTargetDependency */,
+			);
+			name = BKMoneyKitDemoTests;
+			productName = BKMoneyKitDemoTests;
+			productReference = DFB362B119A8F65F001E640D /* BKMoneyKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB3628E19A8F65F001E640D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Byungkook Jang";
+				TargetAttributes = {
+					DFB362B019A8F65F001E640D = {
+						TestTargetID = DFB3629519A8F65F001E640D;
+					};
+				};
+			};
+			buildConfigurationList = DFB3629119A8F65F001E640D /* Build configuration list for PBXProject "BKMoneyKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFB3628D19A8F65F001E640D;
+			productRefGroup = DFB3629719A8F65F001E640D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFB3629519A8F65F001E640D /* BKMoneyKitDemo */,
+				DFB362B019A8F65F001E640D /* BKMoneyKitDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB3629419A8F65F001E640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB362CD19A8F6BF001E640D /* BKViewController.xib in Resources */,
+				DFB362A419A8F65F001E640D /* InfoPlist.strings in Resources */,
+				DFB362D919A8F6FB001E640D /* CardLogo.bundle in Resources */,
+				DFB362DA19A8F6FB001E640D /* CardPatterns.plist in Resources */,
+				DFB362AC19A8F65F001E640D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB362AF19A8F65F001E640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB362BD19A8F65F001E640D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB3629219A8F65F001E640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB362ED19A8FCDF001E640D /* BKMoneyUtils.m in Sources */,
+				DFB362D719A8F6FB001E640D /* BKCardNumberFormatter.m in Sources */,
+				DFB362F019A8FE76001E640D /* BKForwardingTextField.m in Sources */,
+				DFB362CC19A8F6BF001E640D /* BKViewController.m in Sources */,
+				DFB362A619A8F65F001E640D /* main.m in Sources */,
+				DFB362DF19A8F823001E640D /* BKCardExpiryField.m in Sources */,
+				DFB362E819A8F8EA001E640D /* BKCurrencyTextField.m in Sources */,
+				DFB362D619A8F6FB001E640D /* BKCardNumberField.m in Sources */,
+				DFB362AA19A8F65F001E640D /* BKAppDelegate.m in Sources */,
+				DFB362D819A8F6FB001E640D /* BKCardPatternInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB362AD19A8F65F001E640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB362BF19A8F65F001E640D /* BKMoneyKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFB362B719A8F65F001E640D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB3629519A8F65F001E640D /* BKMoneyKitDemo */;
+			targetProxy = DFB362B619A8F65F001E640D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFB362A219A8F65F001E640D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB362A319A8F65F001E640D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFB362BB19A8F65F001E640D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB362BC19A8F65F001E640D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB362C019A8F65F001E640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFB362C119A8F65F001E640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFB362C319A8F65F001E640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKMoneyKitDemo/BKMoneyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKMoneyKitDemo/BKMoneyKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFB362C419A8F65F001E640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKMoneyKitDemo/BKMoneyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKMoneyKitDemo/BKMoneyKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DFB362C619A8F65F001E640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BKMoneyKitDemo.app/BKMoneyKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKMoneyKitDemo/BKMoneyKitDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BKMoneyKitDemoTests/BKMoneyKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DFB362C719A8F65F001E640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BKMoneyKitDemo.app/BKMoneyKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKMoneyKitDemo/BKMoneyKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKMoneyKitDemoTests/BKMoneyKitDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB3629119A8F65F001E640D /* Build configuration list for PBXProject "BKMoneyKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB362C019A8F65F001E640D /* Debug */,
+				DFB362C119A8F65F001E640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB362C219A8F65F001E640D /* Build configuration list for PBXNativeTarget "BKMoneyKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB362C319A8F65F001E640D /* Debug */,
+				DFB362C419A8F65F001E640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB362C519A8F65F001E640D /* Build configuration list for PBXNativeTarget "BKMoneyKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB362C619A8F65F001E640D /* Debug */,
+				DFB362C719A8F65F001E640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB3628E19A8F65F001E640D /* Project object */;
+}
