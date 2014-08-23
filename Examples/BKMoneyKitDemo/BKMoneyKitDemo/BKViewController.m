@@ -29,8 +29,8 @@
 
     self.cardNumberField.showsCardLogo = YES;
     
-    self.currencyTextField.numberFormatter.currencySymbol = @"";
-    self.currencyTextField.numberFormatter.currencyCode = @"KRW";
+//    self.currencyTextField.numberFormatter.currencySymbol = @"";
+//    self.currencyTextField.numberFormatter.currencyCode = @"KRW";
     
     [self.cardNumberField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.cardExpiryField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
