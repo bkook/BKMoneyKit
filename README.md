@@ -41,8 +41,10 @@ NSString *companyName = cardNumberField.cardCompanyName;
 ```objc
 
 BKCardNumberLabel *cardNumberLabel = [[BKCardNumberLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 40)];
-cardNumberLabel.cardNumberFormatter.maskingCharacter = @"●";       // BLACK CIRCLE (0x25CF)
-cardNumberLabel.cardNumberFormatter.maskingGroupIndexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 2)];    // masking first and second group.
+// set masking character. BLACK CIRCLE (0x25CF)
+cardNumberLabel.cardNumberFormatter.maskingCharacter = @"●";
+// masking second and third group.
+cardNumberLabel.cardNumberFormatter.maskingGroupIndexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 2)];
 
 ```
 
