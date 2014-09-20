@@ -14,9 +14,11 @@ Card logo images by http://www.shopify.com/blog/6335014-32-free-credit-card-icon
 | Class | Description |
 | ----- | ----------- |
 | ```BKCardNumberField``` | Subclass of UITextField that supports formatting card number. You can show card logo image by setting ```showsCardLogo``` to ```YES```. |
-| ```BKCardNumberFormatter``` | Subclass of NSFormatter. This class has card number pattern information inside and formats according to patterns. |
+| ```BKCardNumberLabel``` | Subclass of UILabel that displays formatted card number and card brand logo. You can mask card number by configuring ```cardNumberFormatter```. |
+| ```BKCardNumberFormatter``` | Subclass of NSFormatter. This class has card number pattern information inside and formats according to patterns. You can customize masking behavior, masking character and group separater character. |
 | ```BKCardExpiryField``` | Subclass of UITextField that supports formatting card number expiry date. |
 | ```BKCurrencyTextField``` | Subclass of UITextField that supports formatting money amount. You can change currency by changing the ```currencyCode``` property of ```numberFormatter```. |
+
 
 ## Examples
 
@@ -33,6 +35,15 @@ NSString *cardNumber = cardNumberField.cardNumber;
 
 // get card company name
 NSString *companyName = cardNumberField.cardCompanyName;
+```
+
+### BKCardNumberLabel
+```objc
+
+BKCardNumberLabel *cardNumberLabel = [[BKCardNumberLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 40)];
+cardNumberLabel.cardNumberFormatter.maskingCharacter = @"●";       // BLACK CIRCLE (0x25CF)
+cardNumberLabel.cardNumberFormatter.maskingGroupIndexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 2)];    // masking first and second group.
+
 ```
 
 ### BKCardExpiryField
