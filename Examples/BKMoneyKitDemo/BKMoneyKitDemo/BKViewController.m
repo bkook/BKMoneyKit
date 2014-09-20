@@ -37,6 +37,10 @@
     [self.currencyTextField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     
     [self.cardNumberField becomeFirstResponder];
+    
+    self.cardNumberLabel.cardNumberFormatter.maskingCharacter = @"●";       // BLACK CIRCLE        25CF
+    self.cardNumberLabel.cardNumberFormatter.maskingGroupIndexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 3)];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,12 +58,14 @@
             cardCompany = @"unknown";
         }
         
-        self.cardNumberLabel.text = [NSString stringWithFormat:@"company=%@\nnumber=%@", cardCompany, self.cardNumberField.cardNumber];
+        self.cardNumberLabel.cardNumber = self.cardNumberField.cardNumber;
+        
+        self.cardNumberInfoLabel.text = [NSString stringWithFormat:@"company=%@\nnumber=%@", cardCompany, self.cardNumberField.cardNumber];
         
     } else if (sender == self.cardExpiryField) {
         
         NSDateComponents *dateComp = self.cardExpiryField.dateComponents;
-        self.cardExpiryLabel.text = [NSString stringWithFormat:@"month=%d, year=%d", dateComp.month, dateComp.year];
+        self.cardExpiryLabel.text = [NSString stringWithFormat:@"month=%ld, year=%ld", dateComp.month, dateComp.year];
         
     } else if (sender == self.currencyTextField) {
         

@@ -67,7 +67,7 @@
     return numberOfMatches > 0;
 }
 
-- (NSString *)groupedStringWithString:(NSString *)aString
+- (NSString *)groupedStringWithString:(NSString *)aString groupSeparater:(NSString *)aGroupSeparater maskingCharacter:(NSString *)aMaskingCharacter maskingGroupIndexSet:(NSIndexSet *)aMaskingGroupIndexSet
 {
     if (aString.length == 0) {
         return @"";
@@ -86,23 +86,23 @@
         NSNumber *digitCountNumber = self.numberGrouping[i];
         NSInteger digitCount = digitCountNumber.integerValue;
         
-        NSRange substringRange = NSMakeRange(location, digitCount);
+        NSRange substringRange = NSMakeRange(location, MIN(digitCount, aString.length - location));
         
-        if (NSMaxRange(substringRange) <= aString.length) {
-            
-            [mutableString appendString:[aString substringWithRange:substringRange]];
-            
-            location += digitCount;
-            
-            if (i < self.numberGrouping.count - 1) {
-                [mutableString appendString:@" "];
-            } else {
-                [mutableString appendString:[aString substringFromIndex:location]];
-            }
-            
+        if (aMaskingCharacter && [aMaskingGroupIndexSet containsIndex:i]) {
+            NSString *maskString = [@"" stringByPaddingToLength:substringRange.length withString:aMaskingCharacter startingAtIndex:0];
+            [mutableString appendString:maskString];
         } else {
-            [mutableString appendString:[aString substringFromIndex:location]];
+            [mutableString appendString:[aString substringWithRange:substringRange]];
+        }
+        
+        location += substringRange.length;
+        
+        if (substringRange.length < digitCount) {
             break;
+        }
+
+        if (i < self.numberGrouping.count - 1) {
+            [mutableString appendString:aGroupSeparater];
         }
     }
     

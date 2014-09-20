@@ -14,4 +14,6 @@
 
 + (NSCharacterSet *)numberCharacterSet;
 
++ (UIImage *)cardLogoImageWithShortName:(NSString *)shortName;
+
 @end

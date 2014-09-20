@@ -109,16 +109,8 @@
     
     BKCardPatternInfo *patternInfo = self.cardNumberFormatter.cardPatternInfo;
     
-    UIImage *cardLogoImage = nil;
+    UIImage *cardLogoImage = [BKMoneyUtils cardLogoImageWithShortName:patternInfo.shortName];
     
-    if (patternInfo) {
-        cardLogoImage = [UIImage imageNamed:[NSString stringWithFormat:@"CardLogo.bundle/%@", patternInfo.shortName]];
-    }
-    
-    if (nil == patternInfo || nil == cardLogoImage) {
-        cardLogoImage = [UIImage imageNamed:@"CardLogo.bundle/default"];
-    }
-
     self.cardLogoImageView.image = cardLogoImage;
 }
 
@@ -131,7 +123,10 @@
         
         if (showsCardLogo) {
             
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+            CGFloat size = CGRectGetHeight(self.frame);
+            
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 44.f, size)];
+            imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
             imageView.contentMode = UIViewContentModeCenter;
             
             self.leftView = imageView;

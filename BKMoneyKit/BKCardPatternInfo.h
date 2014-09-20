@@ -21,6 +21,11 @@
 @property (nonatomic, strong, readonly) NSString      *shortName;
 
 /**
+ * 
+ */
+@property (nonatomic, readonly) NSInteger numberOfGroups;
+
+/**
  * Initialize card pattern info with dictionary object in CardPatterns.plist
  */
 - (instancetype)initWithDictionary:(NSDictionary *)aDictionary;
@@ -33,6 +38,9 @@
 /**
  * Returns formatted card number string. (e.g., 1234 1234 1234 1234)
  */
-- (NSString *)groupedStringWithString:(NSString *)aString;
+- (NSString *)groupedStringWithString:(NSString *)aString
+                       groupSeparater:(NSString *)aGroupSeparater
+                     maskingCharacter:(NSString *)aMaskingCharacter
+                 maskingGroupIndexSet:(NSIndexSet *)aMaskingGroupIndexSet;
 
 @end

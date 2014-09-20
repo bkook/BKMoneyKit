@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF68E2D919CDE25D00EF5554 /* BKCardNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF68E2D819CDE25D00EF5554 /* BKCardNumberLabel.m */; };
 		DFB3629A19A8F65F001E640D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629919A8F65F001E640D /* Foundation.framework */; };
 		DFB3629C19A8F65F001E640D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629B19A8F65F001E640D /* CoreGraphics.framework */; };
 		DFB3629E19A8F65F001E640D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629D19A8F65F001E640D /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF68E2D719CDE25D00EF5554 /* BKCardNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberLabel.h; sourceTree = "<group>"; };
+		DF68E2D819CDE25D00EF5554 /* BKCardNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberLabel.m; sourceTree = "<group>"; };
 		DFB3629619A8F65F001E640D /* BKMoneyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKMoneyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB3629919A8F65F001E640D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFB3629B19A8F65F001E640D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF68E2D619CDE1ED00EF5554 /* CardNumberLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DF68E2D719CDE25D00EF5554 /* BKCardNumberLabel.h */,
+				DF68E2D819CDE25D00EF5554 /* BKCardNumberLabel.m */,
+			);
+			name = CardNumberLabel;
+			sourceTree = "<group>";
+		};
 		DFB3628D19A8F65F001E640D = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +195,7 @@
 			children = (
 				DFB362EA19A8FCD2001E640D /* Common */,
 				DFB362DB19A8F7ED001E640D /* CardNumberField */,
+				DF68E2D619CDE1ED00EF5554 /* CardNumberLabel */,
 				DFB362DC19A8F80B001E640D /* CardExpiryField */,
 				DFB362E019A8F8AE001E640D /* CurrencyTextField */,
 			);
@@ -334,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB362ED19A8FCDF001E640D /* BKMoneyUtils.m in Sources */,
+				DF68E2D919CDE25D00EF5554 /* BKCardNumberLabel.m in Sources */,
 				DFB362D719A8F6FB001E640D /* BKCardNumberFormatter.m in Sources */,
 				DFB362F019A8FE76001E640D /* BKForwardingTextField.m in Sources */,
 				DFB362CC19A8F6BF001E640D /* BKViewController.m in Sources */,

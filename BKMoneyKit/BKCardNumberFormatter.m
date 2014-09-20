@@ -40,8 +40,8 @@
         }
         
         self.cardPatterns = [NSSet setWithArray:mutableArray];
-        
         self.nonNumericRegularExpression = [BKMoneyUtils nonNumericRegularExpression];
+        self.groupSeparater = @" ";
     }
     return self;
 }
@@ -60,7 +60,7 @@
     BKCardPatternInfo *patternInfo = [self cardPatternInfoWithNumberString:numberString];
     
     if (patternInfo) {
-        return [patternInfo groupedStringWithString:numberString];
+        return [patternInfo groupedStringWithString:numberString groupSeparater:self.groupSeparater maskingCharacter:self.maskingCharacter maskingGroupIndexSet:self.maskingGroupIndexSet];
     } else {
         return numberString;
     }

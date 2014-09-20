@@ -20,4 +20,19 @@
     return [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
 }
 
++ (UIImage *)cardLogoImageWithShortName:(NSString *)shortName
+{
+    UIImage *cardLogoImage = nil;
+    
+    if (shortName) {
+        cardLogoImage = [UIImage imageNamed:[NSString stringWithFormat:@"CardLogo.bundle/%@", shortName]];
+    }
+    
+    if (nil == cardLogoImage) {
+        cardLogoImage = [UIImage imageNamed:@"CardLogo.bundle/default"];
+    }
+    
+    return cardLogoImage;
+}
+
 @end
