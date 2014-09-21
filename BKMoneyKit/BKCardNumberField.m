@@ -145,6 +145,7 @@
 - (void)setCardNumber:(NSString *)cardNumber
 {
     self.text = [self.cardNumberFormatter formattedStringFromRawString:cardNumber];
+    [self updateCardLogoImage];
 }
 
 - (NSString *)cardNumber
