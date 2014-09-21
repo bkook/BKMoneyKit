@@ -25,8 +25,7 @@
 		DFB362D619A8F6FB001E640D /* BKCardNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362CF19A8F6FB001E640D /* BKCardNumberField.m */; };
 		DFB362D719A8F6FB001E640D /* BKCardNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */; };
 		DFB362D819A8F6FB001E640D /* BKCardPatternInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */; };
-		DFB362D919A8F6FB001E640D /* CardLogo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB362D419A8F6FB001E640D /* CardLogo.bundle */; };
-		DFB362DA19A8F6FB001E640D /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFB362D519A8F6FB001E640D /* CardPatterns.plist */; };
+		DFB362D919A8F6FB001E640D /* BKMoneyKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB362D419A8F6FB001E640D /* BKMoneyKit.bundle */; };
 		DFB362DF19A8F823001E640D /* BKCardExpiryField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362DE19A8F823001E640D /* BKCardExpiryField.m */; };
 		DFB362E819A8F8EA001E640D /* BKCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362E419A8F8EA001E640D /* BKCurrencyTextField.m */; };
 		DFB362ED19A8FCDF001E640D /* BKMoneyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB362EC19A8FCDF001E640D /* BKMoneyUtils.m */; };
@@ -71,8 +70,7 @@
 		DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberFormatter.m; sourceTree = "<group>"; };
 		DFB362D219A8F6FB001E640D /* BKCardPatternInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardPatternInfo.h; sourceTree = "<group>"; };
 		DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardPatternInfo.m; sourceTree = "<group>"; };
-		DFB362D419A8F6FB001E640D /* CardLogo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CardLogo.bundle; sourceTree = "<group>"; };
-		DFB362D519A8F6FB001E640D /* CardPatterns.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CardPatterns.plist; sourceTree = "<group>"; };
+		DFB362D419A8F6FB001E640D /* BKMoneyKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BKMoneyKit.bundle; sourceTree = "<group>"; };
 		DFB362DD19A8F823001E640D /* BKCardExpiryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardExpiryField.h; sourceTree = "<group>"; };
 		DFB362DE19A8F823001E640D /* BKCardExpiryField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryField.m; sourceTree = "<group>"; };
 		DFB362E319A8F8EA001E640D /* BKCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCurrencyTextField.h; sourceTree = "<group>"; };
@@ -212,8 +210,6 @@
 				DFB362D119A8F6FB001E640D /* BKCardNumberFormatter.m */,
 				DFB362D219A8F6FB001E640D /* BKCardPatternInfo.h */,
 				DFB362D319A8F6FB001E640D /* BKCardPatternInfo.m */,
-				DFB362D419A8F6FB001E640D /* CardLogo.bundle */,
-				DFB362D519A8F6FB001E640D /* CardPatterns.plist */,
 			);
 			name = CardNumberField;
 			sourceTree = "<group>";
@@ -243,6 +239,7 @@
 				DFB362EC19A8FCDF001E640D /* BKMoneyUtils.m */,
 				DFB362EE19A8FE76001E640D /* BKForwardingTextField.h */,
 				DFB362EF19A8FE76001E640D /* BKForwardingTextField.m */,
+				DFB362D419A8F6FB001E640D /* BKMoneyKit.bundle */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -325,8 +322,7 @@
 			files = (
 				DFB362CD19A8F6BF001E640D /* BKViewController.xib in Resources */,
 				DFB362A419A8F65F001E640D /* InfoPlist.strings in Resources */,
-				DFB362D919A8F6FB001E640D /* CardLogo.bundle in Resources */,
-				DFB362DA19A8F6FB001E640D /* CardPatterns.plist in Resources */,
+				DFB362D919A8F6FB001E640D /* BKMoneyKit.bundle in Resources */,
 				DFB362AC19A8F65F001E640D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

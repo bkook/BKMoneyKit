@@ -27,7 +27,7 @@
     self = [super init];
     if (self) {
         
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"CardPatterns" ofType:@"plist"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"BKMoneyKit.bundle/CardPatterns" ofType:@"plist"];
         NSArray *array = [NSArray arrayWithContentsOfFile:filePath];
         NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:array.count];
         

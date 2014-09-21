@@ -25,11 +25,11 @@
     UIImage *cardLogoImage = nil;
     
     if (shortName) {
-        cardLogoImage = [UIImage imageNamed:[NSString stringWithFormat:@"CardLogo.bundle/%@", shortName]];
+        cardLogoImage = [UIImage imageNamed:[NSString stringWithFormat:@"BKMoneyKit.bundle/CardLogo/%@", shortName]];
     }
     
     if (nil == cardLogoImage) {
-        cardLogoImage = [UIImage imageNamed:@"CardLogo.bundle/default"];
+        cardLogoImage = [UIImage imageNamed:@"BKMoneyKit.bundle/CardLogo/default"];
     }
     
     return cardLogoImage;
