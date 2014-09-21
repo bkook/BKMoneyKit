@@ -7,7 +7,6 @@
 //
 
 #import "BKCardNumberField.h"
-#import "BKCardNumberFormatter.h"
 #import "BKMoneyUtils.h"
 
 @interface BKCardNumberField ()

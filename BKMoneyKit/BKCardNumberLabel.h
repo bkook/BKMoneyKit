@@ -28,8 +28,13 @@
 @property (nonatomic, readonly) NSString *cardCompanyName;
 
 /**
- * A card number formatter. You can change formatting behavior using this property.
+ * The card number formatter. You can change formatting behavior using this property.
  */
 @property (nonatomic, strong, readonly) BKCardNumberFormatter *cardNumberFormatter;
+
+/**
+ * The card number logo image view.
+ */
+@property (nonatomic, strong, readonly) UIImageView *cardLogoImageView;
 
 @end
