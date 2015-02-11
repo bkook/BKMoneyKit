@@ -10,15 +10,7 @@
 
 @interface BKCurrencyTextField : BKForwardingTextField
 
-/**
- * The currency style number formatter. 
- * You can change currency by changing currencyCode or locale property of this formatter.
- */
-@property (strong, nonatomic, readonly) NSNumberFormatter   *numberFormatter;
-
-/**
- * The decimal number that user typed.
- */
-@property (strong, nonatomic) NSDecimalNumber               *numberValue;
+@property (strong, nonatomic, readonly) NSNumberFormatter *numberFormatter;
+@property (strong, nonatomic) NSDecimalNumber *numberValue; // textField number
 
 @end
