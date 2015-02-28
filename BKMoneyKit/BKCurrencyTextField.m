@@ -31,6 +31,8 @@
 
     _nonNumericRegularExpression = [BKMoneyUtils nonNumericRegularExpression];
     _numberCharacterSet = [BKMoneyUtils numberCharacterSet];
+    
+    self.placeholder = [_numberFormatter stringFromNumber:@(0)];
 }
 
 #pragma mark - UITextFieldDelegate
