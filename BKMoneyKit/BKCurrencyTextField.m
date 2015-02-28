@@ -61,7 +61,11 @@
     NSString *newString = [currentText stringByReplacingCharactersInRange:range withString:string];
     
     NSString *digits = [self stringByRemovingNonNumericCharacters:newString];
-    
+
+    if (digits.length == 0) {
+        return string.length == 0;
+    }
+
     NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithString:digits];
     
     if (self.numberFormatter.maximumFractionDigits > 0) {
