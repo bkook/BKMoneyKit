@@ -11,6 +11,7 @@
 #import "BKCardExpiryField.h"
 #import "BKCurrencyTextField.h"
 #import "BKCardNumberLabel.h"
+#import "BKBirthdayField.h"
 
 @interface BKViewController : UIViewController <UITextFieldDelegate>
 
@@ -19,9 +20,11 @@
 
 @property (weak, nonatomic) IBOutlet BKCardExpiryField *cardExpiryField;
 @property (weak, nonatomic) IBOutlet BKCurrencyTextField *currencyTextField;
+@property (weak, nonatomic) IBOutlet BKBirthdayField *birthdayField;
 
 @property (weak, nonatomic) IBOutlet UILabel *cardNumberInfoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cardExpiryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currencyTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *birthdayTextLabel;
 
 @end

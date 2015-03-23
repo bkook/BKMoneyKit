@@ -18,6 +18,7 @@ Card logo images by http://www.shopify.com/blog/6335014-32-free-credit-card-icon
 | ```BKCardNumberFormatter``` | Subclass of NSFormatter. This class has card number pattern information inside and formats according to patterns. You can customize masking behavior, masking character and group separater character. |
 | ```BKCardExpiryField``` | Subclass of UITextField that supports formatting card number expiry date. |
 | ```BKCurrencyTextField``` | Subclass of UITextField that supports formatting money amount. You can change currency by changing the ```currencyCode``` property of ```numberFormatter```. |
+| ```BKBirthdayField``` | Subclass of UITextField that supports formatting birthday in (MM/DD/YYYY) format. |
 
 
 ## Examples
@@ -71,3 +72,25 @@ field.numberFormatter.currencyCode = @"KRW";
 // get number value
 NSDecimalNumber *number = field.numberValue;
 ```
+
+### BKBirthdayField
+
+```objc
+BKBirthdayField *field = [[BKBirthdayField alloc] init];
+
+// validate first before accessing due to leap year logic and day being typed before year
+if ([field isValidDate]) {
+	// get day
+	NSInteger day = field.dateComponents.day;
+
+	// get month
+	NSInteger month = field.dateComponents.month;
+
+	// get year
+	NSInteger year = field.dateComponents.year;
+} else {
+	// date not valid
+}
+
+```
+

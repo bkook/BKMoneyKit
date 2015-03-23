@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F641EAD1ABF89C00098D2D6 /* BKBirthdayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F641EAC1ABF89C00098D2D6 /* BKBirthdayField.m */; };
 		DF68E2D919CDE25D00EF5554 /* BKCardNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF68E2D819CDE25D00EF5554 /* BKCardNumberLabel.m */; };
 		DFB3629A19A8F65F001E640D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629919A8F65F001E640D /* Foundation.framework */; };
 		DFB3629C19A8F65F001E640D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3629B19A8F65F001E640D /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F641EAB1ABF89C00098D2D6 /* BKBirthdayField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBirthdayField.h; sourceTree = "<group>"; };
+		1F641EAC1ABF89C00098D2D6 /* BKBirthdayField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBirthdayField.m; sourceTree = "<group>"; };
 		DF68E2D719CDE25D00EF5554 /* BKCardNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberLabel.h; sourceTree = "<group>"; };
 		DF68E2D819CDE25D00EF5554 /* BKCardNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberLabel.m; sourceTree = "<group>"; };
 		DFB3629619A8F65F001E640D /* BKMoneyKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKMoneyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F641EAA1ABF88290098D2D6 /* BirthdayField */ = {
+			isa = PBXGroup;
+			children = (
+				1F641EAB1ABF89C00098D2D6 /* BKBirthdayField.h */,
+				1F641EAC1ABF89C00098D2D6 /* BKBirthdayField.m */,
+			);
+			name = BirthdayField;
+			sourceTree = "<group>";
+		};
 		DF68E2D619CDE1ED00EF5554 /* CardNumberLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				DFB362EA19A8FCD2001E640D /* Common */,
+				1F641EAA1ABF88290098D2D6 /* BirthdayField */,
 				DFB362DB19A8F7ED001E640D /* CardNumberField */,
 				DF68E2D619CDE1ED00EF5554 /* CardNumberLabel */,
 				DFB362DC19A8F80B001E640D /* CardExpiryField */,
@@ -346,6 +359,7 @@
 				DF68E2D919CDE25D00EF5554 /* BKCardNumberLabel.m in Sources */,
 				DFB362D719A8F6FB001E640D /* BKCardNumberFormatter.m in Sources */,
 				DFB362F019A8FE76001E640D /* BKForwardingTextField.m in Sources */,
+				1F641EAD1ABF89C00098D2D6 /* BKBirthdayField.m in Sources */,
 				DFB362CC19A8F6BF001E640D /* BKViewController.m in Sources */,
 				DFB362A619A8F65F001E640D /* main.m in Sources */,
 				DFB362DF19A8F823001E640D /* BKCardExpiryField.m in Sources */,
