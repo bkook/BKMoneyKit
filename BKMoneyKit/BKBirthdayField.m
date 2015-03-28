@@ -110,35 +110,8 @@
         } else if (dayString.length == 2) {
             NSInteger dayInteger = dayString.integerValue;
             
-            switch (monthInteger) {
-                case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
-                    if (dayInteger < 1 || dayInteger > 31) {
-                        return NO;
-                    }
-                    break;
-                case 4:
-                case 6:
-                case 9:
-                case 11:
-                    if (dayInteger < 1 || dayInteger > 30) {
-                        return NO;
-                    }
-                    break;
-                case 2:
-                    // Month is typed before year, won't know if it's a leap year, bound check against upper limit
-                    if (dayInteger < 1 || dayInteger > 29) {
-                        return NO;
-                    }
-                    break;
-                default:
-                    return NO;
-                    break;
+            if (![self isValidDay:dayInteger forMonth:monthInteger]) {
+                return NO;
             }
         }
         [formattedString appendString:dayString];
@@ -192,6 +165,42 @@
     }
     
     return NO;
+}
+
+- (BOOL)isValidDay:(NSInteger)day forMonth:(NSInteger)month {
+    
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            if (day < 1 || day > 31) {
+                return NO;
+            }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            if (day < 1 || day > 30) {
+                return NO;
+            }
+            break;
+        case 2:
+            // Month is typed before year, won't know if it's a leap year, bound check against upper limit
+            if (day < 1 || day > 29) {
+                return NO;
+            }
+            break;
+        default:
+            return NO;
+            break;
+    }
+    
+    return YES;
 }
 
 #pragma mark - Public methods
