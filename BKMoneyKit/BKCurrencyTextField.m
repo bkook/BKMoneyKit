@@ -24,7 +24,7 @@
     [super commonInit];
     
     self.keyboardType = UIKeyboardTypeNumberPad;
-    self.textAlignment = NSTextAlignmentRight;
+    //self.textAlignment = NSTextAlignmentRight;
     
     _numberFormatter = [[NSNumberFormatter alloc] init];
     _numberFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
