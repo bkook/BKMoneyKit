@@ -111,7 +111,7 @@
 
 + (NSInteger)currentYear
 {
-    NSDateComponents *currentDateComponents = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *currentDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
     return currentDateComponents.year;
 }
 
