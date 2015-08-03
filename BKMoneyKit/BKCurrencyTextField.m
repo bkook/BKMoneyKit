@@ -92,6 +92,7 @@
         [textField setSelectedTextRange:newRange];
     }
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self];
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
     
     return NO;
