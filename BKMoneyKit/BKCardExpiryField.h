@@ -15,4 +15,6 @@
  */
 @property (nonatomic, strong) NSDateComponents      *dateComponents;
 
++ (NSInteger)currentYear;
+
 @end
