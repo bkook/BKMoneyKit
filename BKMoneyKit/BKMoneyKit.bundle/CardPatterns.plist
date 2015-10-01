@@ -13,6 +13,8 @@
 		<string>4,6,4</string>
 		<key>length</key>
 		<string>14</string>
+		<key>validator</key>
+		<string>^3(?:0[0-5]|[68][0-9])[0-9]{11}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -25,6 +27,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>16</string>
+		<key>validator</key>
+		<string>^(?:2131|1800|35\d{3})\d{11}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -37,6 +41,8 @@
 		<string>4,6,5</string>
 		<key>length</key>
 		<string>15</string>
+		<key>validator</key>
+		<string>^3[47][0-9]{13}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -49,6 +55,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>16,17,18,19</string>
+		<key>validator</key>
+		<string>^(?:5[0678]\d\d|6304|6390|67\d\d)\d{8,15}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -61,6 +69,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>13,14,15,16</string>
+		<key>validator</key>
+		<string>^4[0-9]{12}(?:[0-9]{3})?$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -73,6 +83,8 @@
 		<string>19</string>
 		<key>length</key>
 		<string>16,17,18,19</string>
+		<key>validator</key>
+		<string>^62[0-5]\d{13,16}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -85,6 +97,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>16</string>
+		<key>validator</key>
+		<string>^5[1-5][0-9]{14}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -97,6 +111,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>12,13,14,15,16,17,18,19</string>
+		<key>validator</key>
+		<string>^(?:5[0678]\d\d|6304|6390|67\d\d)\d{8,15}$</string>
 	</dict>
 	<dict>
 		<key>pattern</key>
@@ -109,6 +125,8 @@
 		<string>4,4,4,4</string>
 		<key>length</key>
 		<string>16</string>
+		<key>validator</key>
+		<string>^6(?:011\d\d|5\d{4}|4[4-9]\d{3}|22(?:1(?:2[6-9]|[3-9]\d)|[2-8]\d\d|9(?:[01]\d|2[0-5])))\d{10}$</string>
 	</dict>
 </array>
 </plist>
