@@ -37,4 +37,9 @@
  */
 @property (nonatomic, strong, readonly) UIImageView *cardLogoImageView;
 
+/**
+ * If the credit card number is Valid
+ */
+- (BOOL)isCreditCardValid;
+
 @end

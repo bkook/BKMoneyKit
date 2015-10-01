@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString              *companyName;
 @property (nonatomic, strong) NSString              *shortName;
 @property (nonatomic, strong) NSRegularExpression   *patternRegularExpression;
+@property (nonatomic, strong) NSRegularExpression   *validateRegularExpression;
 @property (nonatomic, strong) NSArray               *numberGrouping;
 @property (nonatomic, strong) NSArray               *lengths;
 @property (nonatomic) NSInteger                     maxLength;
@@ -27,6 +28,8 @@
     if (self) {
         NSString *pattern = aDictionary[@"pattern"];
         self.patternRegularExpression = [[NSRegularExpression alloc] initWithPattern:pattern options:0 error:nil];
+        NSString *validator = aDictionary[@"validator"];
+        self.validateRegularExpression = [[NSRegularExpression alloc] initWithPattern:validator options:0 error:nil];
         self.companyName = aDictionary[@"companyName"];
         self.shortName = aDictionary[@"shortName"];
         self.numberGrouping = [[self class] numberArrayWithCommaSeparatedString:aDictionary[@"numberGrouping"] maxValue:NULL];
@@ -64,6 +67,12 @@
 - (BOOL)patternMatchesWithNumberString:(NSString *)aNumberString
 {
     NSUInteger numberOfMatches = [self.patternRegularExpression numberOfMatchesInString:aNumberString options:0 range:NSMakeRange(0, aNumberString.length)];
+    return numberOfMatches > 0;
+}
+
+- (BOOL)isAValidCreditCard:(NSString *)aNumberString
+{
+    NSUInteger numberOfMatches = [self.validateRegularExpression numberOfMatchesInString:aNumberString options:0 range:NSMakeRange(0, aNumberString.length)];
     return numberOfMatches > 0;
 }
 

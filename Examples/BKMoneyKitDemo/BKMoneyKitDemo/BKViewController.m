@@ -56,6 +56,7 @@
         if (nil == cardCompany) {
             cardCompany = @"unknown";
         }
+        self.cardNumberField.textColor = [self.cardNumberField isCreditCardValid] ? [UIColor greenColor] : [UIColor redColor];
         
         self.cardNumberLabel.cardNumber = self.cardNumberField.cardNumber;
         

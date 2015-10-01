@@ -157,4 +157,9 @@
     return self.cardNumberFormatter.cardPatternInfo.companyName;
 }
 
+- (BOOL)isCreditCardValid
+{
+    return [self.cardNumberFormatter.cardPatternInfo isAValidCreditCard:self.cardNumber];
+}
+
 @end

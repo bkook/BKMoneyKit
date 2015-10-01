@@ -30,6 +30,12 @@
  */
 - (instancetype)initWithDictionary:(NSDictionary *)aDictionary;
 
+
+/**
+ * Check if the string given is a valid credit card
+ */
+- (BOOL)isAValidCreditCard:(NSString *)aNumberString;
+
 /**
  * Check whether number string matches credit card number pattern.
  */
