@@ -25,7 +25,14 @@
     UIImage *cardLogoImage = nil;
     
     if (shortName) {
-        cardLogoImage = [self imageNamed:[NSString stringWithFormat:@"BKMoneyKit.bundle/CardLogo/%@@2x", shortName]];
+        //Check if local image exist
+        UIImage *localCardLogoImage = [UIImage imageNamed:shortName];
+        
+        if (localCardLogoImage == nil) {
+            cardLogoImage = [self imageNamed:[NSString stringWithFormat:@"BKMoneyKit.bundle/CardLogo/%@@2x", shortName]];
+        }else{
+            cardLogoImage = localCardLogoImage;
+        }
     }
     
     if (nil == cardLogoImage) {
