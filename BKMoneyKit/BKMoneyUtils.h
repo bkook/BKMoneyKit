@@ -6,7 +6,7 @@
 //  Copyright (c) 2014년 Byungkook Jang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface BKMoneyUtils : NSObject
 
