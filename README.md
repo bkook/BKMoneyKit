@@ -71,3 +71,7 @@ field.numberFormatter.currencyCode = @"KRW";
 // get number value
 NSDecimalNumber *number = field.numberValue;
 ```
+
+### Custom cards images
+
+Just add to your image assets the card logo with the shortName eg. "visa", "amex", "mastercard" etc..
