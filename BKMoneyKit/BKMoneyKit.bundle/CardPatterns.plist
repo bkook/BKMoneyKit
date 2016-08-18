@@ -58,7 +58,7 @@
 		<key>shortName</key>
 		<string>visa</string>
 		<key>numberGrouping</key>
-		<string>4,4,4,4</string>
+		<string>4,4,4,4,3</string>
 		<key>length</key>
 		<string>13,14,15,16,17,18,19</string>
 	</dict>
@@ -94,7 +94,7 @@
 		<key>shortName</key>
 		<string>maestro</string>
 		<key>numberGrouping</key>
-		<string>4,4,4,4</string>
+		<string>4,4,4,4,3</string>
 		<key>length</key>
 		<string>12,13,14,15,16,17,18,19</string>
 	</dict>
