@@ -10,7 +10,7 @@
 		<key>shortName</key>
 		<string>dinersclubintl</string>
 		<key>numberGrouping</key>
-		<string>4,6,4</string>
+		<string>4,4,4,2</string>
 		<key>length</key>
 		<string>14</string>
 	</dict>
