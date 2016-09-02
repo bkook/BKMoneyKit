@@ -10,7 +10,7 @@
 
 @interface BKForwardingTextField : UITextField <UITextFieldDelegate>
 
-@property (nonatomic, assign, readonly) id<UITextFieldDelegate> userDelegate;
+@property (nonatomic, weak, readonly) id<UITextFieldDelegate> userDelegate;
 
 - (void)commonInit;
 
