@@ -100,6 +100,10 @@
         if (substringRange.length < digitCount) {
             break;
         }
+        
+        if (aString.length == location) {
+            break;
+        }
 
         if (i < self.numberGrouping.count - 1) {
             [mutableString appendString:aGroupSeparater];
