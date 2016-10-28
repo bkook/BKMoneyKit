@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BKMoneyKit"
-  s.version      = "0.0.9"
+  s.version      = "0.0.10"
   s.summary      = "iOS UI controls and formatters for entering money, credit card number and expiry date."
 
 #   s.description  = <<-DESC
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
 
 
