@@ -13,8 +13,21 @@
 
 /**
  * A Boolean indicating whether shows card logo left side or not.
+ * This is similar to showsCardLogoOnLeft.
  */
 @property (nonatomic) BOOL showsCardLogo;
+
+/**
+ * A Boolean indicating whether shows card logo left side or not.
+ * This is similar to showsCardLogo.
+ */
+@property (nonatomic) BOOL showsCardLogoOnLeft;
+
+/**
+ * A Boolean indicating whether shows card logo right side or not.
+ * This replaces the Clear button of the textfield.
+ */
+@property (nonatomic) BOOL showsCardLogoOnRight;
 
 /**
  * The card number without blank space. (e.g., 1234123412341234)
