@@ -24,4 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *cardExpiryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currencyTextLabel;
 
+@property (strong, nonatomic) IBOutlet BKCardNumberField *cardNumberFieldRight;
+
 @end

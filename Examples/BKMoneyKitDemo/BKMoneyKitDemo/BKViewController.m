@@ -28,6 +28,7 @@
     [super viewDidLoad];
 
     self.cardNumberField.showsCardLogo = YES;
+    self.cardNumberFieldRight.showsCardLogoOnRight = YES;
     
 //    self.currencyTextField.numberFormatter.currencySymbol = @"";
 //    self.currencyTextField.numberFormatter.currencyCode = @"KRW";
@@ -35,7 +36,8 @@
     [self.cardNumberField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.cardExpiryField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.currencyTextField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
-    
+    [self.cardNumberFieldRight addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+
     [self.cardNumberField becomeFirstResponder];
     
     self.cardNumberLabel.cardNumberFormatter.maskingCharacter = @"●";       // BLACK CIRCLE        25CF
@@ -50,16 +52,24 @@
 
 - (void)textFieldEditingChanged:(id)sender
 {
-    if (sender == self.cardNumberField) {
-        
-        NSString *cardCompany = self.cardNumberField.cardCompanyName;
+    if (sender == self.cardNumberField ||
+        sender == self.cardNumberFieldRight) {
+
+        BKCardNumberField *cardNumberField = (BKCardNumberField *)sender;
+        NSString *cardCompany = cardNumberField.cardCompanyName;
         if (nil == cardCompany) {
             cardCompany = @"unknown";
         }
+
+        if (cardNumberField == self.cardNumberField) {
+            self.cardNumberFieldRight.cardNumber = cardNumberField.cardNumber;
+        } else if (cardNumberField == self.cardNumberFieldRight) {
+            self.cardNumberField.cardNumber = cardNumberField.cardNumber;
+        }
+
+        self.cardNumberLabel.cardNumber = cardNumberField.cardNumber;
         
-        self.cardNumberLabel.cardNumber = self.cardNumberField.cardNumber;
-        
-        self.cardNumberInfoLabel.text = [NSString stringWithFormat:@"company=%@\nnumber=%@", cardCompany, self.cardNumberField.cardNumber];
+        self.cardNumberInfoLabel.text = [NSString stringWithFormat:@"company=%@\nnumber=%@", cardCompany, cardNumberField.cardNumber];
         
     } else if (sender == self.cardExpiryField) {
         
