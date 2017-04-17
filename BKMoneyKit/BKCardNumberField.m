@@ -9,11 +9,17 @@
 #import "BKCardNumberField.h"
 #import "BKMoneyUtils.h"
 
+typedef NS_ENUM(NSInteger, LogoImagePosition) {
+    LogoImagePositionLeft,
+    LogoImagePositionRight
+};
+
 @interface BKCardNumberField ()
 
 @property (nonatomic, strong) BKCardNumberFormatter     *cardNumberFormatter;
 @property (nonatomic, strong) UIImageView               *cardLogoImageView;
 @property (nonatomic, strong) NSCharacterSet            *numberCharacterSet;
+@property (nonatomic) LogoImagePosition                 logoImagePosition;
 
 @end
 
@@ -31,6 +37,7 @@
     
     self.keyboardType = UIKeyboardTypeNumberPad;
     self.clearButtonMode = UITextFieldViewModeAlways;
+    self.logoImagePosition = LogoImagePositionLeft;
     
     [self addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
 }
@@ -113,32 +120,57 @@
     self.cardLogoImageView.image = cardLogoImage;
 }
 
-#pragma mark - Public Methods
-
-- (void)setShowsCardLogo:(BOOL)showsCardLogo
+- (void)showCardLogoForAppliedPosition:(BOOL)showsCardLogo
 {
     if (_showsCardLogo != showsCardLogo) {
         _showsCardLogo = showsCardLogo;
-        
+
         if (showsCardLogo) {
-            
+
             CGFloat size = CGRectGetHeight(self.frame);
-            
+
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 44.f, size)];
             imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
             imageView.contentMode = UIViewContentModeCenter;
-            
-            self.leftView = imageView;
-            self.leftViewMode = UITextFieldViewModeAlways;
-            
+
+            if (self.logoImagePosition == LogoImagePositionLeft) {
+                self.leftView = imageView;
+                self.leftViewMode = UITextFieldViewModeAlways;
+            } else {
+                self.rightView = imageView;
+                self.rightViewMode = UITextFieldViewModeAlways;
+            }
+
             self.cardLogoImageView = imageView;
-            
+
             [self updateCardLogoImage];
-            
+
         } else {
             self.leftView = nil;
+            self.rightView = nil;
         }
     }
+}
+
+#pragma mark - Public Methods
+
+- (void)setShowsCardLogoOnLeft:(BOOL)showsCardLogoOnLeft
+{
+    self.logoImagePosition = LogoImagePositionLeft;
+
+    [self showCardLogoForAppliedPosition:showsCardLogoOnLeft];
+}
+
+- (void)setShowsCardLogoOnRight:(BOOL)showsCardLogoOnRight
+{
+    self.logoImagePosition = LogoImagePositionRight;
+
+    [self showCardLogoForAppliedPosition:showsCardLogoOnRight];
+}
+
+- (void)setShowsCardLogo:(BOOL)showsCardLogo
+{
+    self.showsCardLogoOnLeft = showsCardLogo;
 }
 
 - (void)setCardNumber:(NSString *)cardNumber
